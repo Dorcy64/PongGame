@@ -4,6 +4,8 @@ SCREEN = Screen()
 SCREEN.setup(width=800, height=600)
 SCREEN.bgcolor("black")
 SCREEN.title("My Pong Game")
+
+
 # SCREEN.tracer(0)
 
 
@@ -18,7 +20,6 @@ class Table(Turtle):
         self.goto(0, 300)
         self.screen_line()
 
-
     def screen_line(self):
         for _ in range(15):
             self.penup()
@@ -27,5 +28,3 @@ class Table(Turtle):
             self.pendown()
             self.setheading(270)
             self.forward(20)
-
-

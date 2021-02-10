@@ -1,9 +1,10 @@
 from turtle import Turtle
+
 Moves = 0
+
 
 class Ball(Turtle):
     def __init__(self):
-        global SPEED
         super().__init__()
         self.shape("circle")
         self.shapesize(stretch_wid=1, stretch_len=1)
@@ -33,10 +34,8 @@ class Ball(Turtle):
         else:
             self.x_move *= -1
 
-
-
-
     def reset_back(self):
+        global Moves
         self.goto(0, 0)
         self.y_move = 1
         self.x_move = 1
